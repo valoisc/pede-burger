@@ -1,0 +1,104 @@
+
+:root {
+  --yellow: #FFCA28;
+  --red: #D84315;
+  --dark: #212121;
+  --cream: #FAF3E0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark);
+}
+
+header {
+  background-color: var(--yellow);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--dark);
+}
+
+header p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: var(--red);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #b3310f;
+}
+
+.links {
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 12px 25px;
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.875rem;
+  background-color: #eee;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .links h2 {
+    font-size: 1.25rem;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
